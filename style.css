@@ -1,0 +1,23 @@
+:root { --bg: #0b0b0e; --surface: #141418; --line: #26262d; --text: #f4f4f5; --text2: #a1a1aa; --acc: #c8ff00; --yt: #ff0033; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--acc); }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+header { border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; gap: 12px; height: 68px; }
+.logo { width: 34px; height: 34px; border-radius: 10px; background: var(--acc); display: grid; place-items: center; }
+.brand { font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; }
+nav { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+nav a { color: var(--text2); text-decoration: none; } nav a:hover { color: var(--text); }
+main { padding: 48px 0 64px; }
+h1 { font-size: 36px; line-height: 1.2; margin: 0 0 14px; letter-spacing: -.5px; }
+h2 { font-size: 21px; margin: 34px 0 8px; }
+p, li { color: #d4d4d8; }
+.lead { font-size: 19px; color: var(--text2); max-width: 680px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; margin-top: 26px; }
+.yt { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; }
+.badge { font-size: 13px; color: var(--text2); }
+footer { border-top: 1px solid var(--line); padding: 26px 0; font-size: 14px; color: var(--text2); }
+footer a { color: var(--text2); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 18px; }
+.grid .card { margin: 0; }
